@@ -1,0 +1,1433 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/mcjca/ontologies/2023/3/WineOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/mcjca/ontologies/2023/3/WineOntology">
+    <Prefix name="" IRI="http://www.semanticweb.org/mcjca/ontologies/2023/3/WineOntology/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Author: Maria Casanova</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal>WineOntology</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Acidity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Body"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WineCharacteristics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Winery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#high"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#low"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#medium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#noacid"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#fromRegion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#fromWinery"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCharacteristics"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#whichType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAcidity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBody"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPrice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasReviews"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isRated"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isfromYear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Abona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alella"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alicante"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Almansa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alvaro_Palacios"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Andalucia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aragon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arinzano"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arribes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Artadi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bierzo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Binissalem-Mallorca"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bodegas_El_Nido"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bodegas_Mauro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bodegas_Valduero"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cadiz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Calatayud"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Campo_de_Borja"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Catalunya"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cava"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cavat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cherry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Conca_de_Barbera"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Condado_de_Huelva"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dehesa_de_los_Canonigos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Descendientes_de_J.Palacios"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Domingo_de_Pingus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dominio_de_Calogia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dominio_del_Bendito"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Don_PX_Pedro_Ximenez"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#El_Nido"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#El_Titan_del_Bendito"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Emilio_Moro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Espanya"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gran_Reserva"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Grenache"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hacienda_Solano"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jumilla"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#La_Rioja_Alta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Montilla-Moriles"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Morca"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ordonez"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pago_de_Carraovejas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pago_de_Los_Capellanes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Parcela_El_Picon_Tinto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pedro_Ximenez"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Recaredo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Red"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ribera_del_Duero"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ribera_del_Duero_Red"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rioja"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sierra_Cantabria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Teso_la_Monja"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tinto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Toro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Toro_Albala"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Toro_Red"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Touran"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unico_Reserva_Espeical_Edicion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Valbuena_5o"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vatan_Arena_Tinta_de_Toro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vega_Sicilia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vina_Sastre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bodega_Contador_(Benjamin_Romeo)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Turo_d&apos;en_Mota"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Acidity"/>
+        <Class IRI="#WineCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Body"/>
+        <Class IRI="#WineCharacteristics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Region"/>
+        <Class IRI="#Country"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#high"/>
+        <Class IRI="#Acidity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#low"/>
+        <Class IRI="#Acidity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#medium"/>
+        <Class IRI="#Acidity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#noacid"/>
+        <Class IRI="#Acidity"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Abona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Alella"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Alicante"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Almansa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Alvaro_Palacios"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Andalucia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Aragon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Arinzano"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Arribes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Artadi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Bierzo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Binissalem-Mallorca"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Bodegas_El_Nido"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Bodegas_Mauro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Bodegas_Valduero"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Cadiz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Calatayud"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Campo_de_Borja"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Catalunya"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Cava"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Type"/>
+        <NamedIndividual IRI="#Cavat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Type"/>
+        <NamedIndividual IRI="#Cherry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Conca_de_Barbera"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Condado_de_Huelva"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Dehesa_de_los_Canonigos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Descendientes_de_J.Palacios"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Domingo_de_Pingus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Dominio_de_Calogia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Dominio_del_Bendito"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wine"/>
+        <NamedIndividual IRI="#Don_PX_Pedro_Ximenez"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wine"/>
+        <NamedIndividual IRI="#El_Nido"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wine"/>
+        <NamedIndividual IRI="#El_Titan_del_Bendito"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Emilio_Moro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Espanya"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wine"/>
+        <NamedIndividual IRI="#Gran_Reserva"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Type"/>
+        <NamedIndividual IRI="#Grenache"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Hacienda_Solano"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Jumilla"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#La_Rioja_Alta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Montilla-Moriles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Morca"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Ordonez"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Pago_de_Carraovejas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Pago_de_Los_Capellanes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wine"/>
+        <NamedIndividual IRI="#Parcela_El_Picon_Tinto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Type"/>
+        <NamedIndividual IRI="#Pedro_Ximenez"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Recaredo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Type"/>
+        <NamedIndividual IRI="#Red"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Ribera_del_Duero"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Type"/>
+        <NamedIndividual IRI="#Ribera_del_Duero_Red"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Rioja"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Sierra_Cantabria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Teso_la_Monja"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wine"/>
+        <NamedIndividual IRI="#Tinto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Toro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Toro_Albala"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Type"/>
+        <NamedIndividual IRI="#Toro_Red"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wine"/>
+        <NamedIndividual IRI="#Touran"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wine"/>
+        <NamedIndividual IRI="#Unico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wine"/>
+        <NamedIndividual IRI="#Unico_Reserva_Espeical_Edicion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wine"/>
+        <NamedIndividual IRI="#Valbuena_5o"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wine"/>
+        <NamedIndividual IRI="#Vatan_Arena_Tinta_de_Toro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Vega_Sicilia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Vina_Sastre"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Bodega_Contador_(Benjamin_Romeo)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wine"/>
+        <NamedIndividual IRI="#Turo_d&apos;en_Mota"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Don_PX_Pedro_Ximenez"/>
+        <NamedIndividual IRI="#Espanya"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fromRegion"/>
+        <NamedIndividual IRI="#Don_PX_Pedro_Ximenez"/>
+        <NamedIndividual IRI="#Montilla-Moriles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fromWinery"/>
+        <NamedIndividual IRI="#Don_PX_Pedro_Ximenez"/>
+        <NamedIndividual IRI="#Toro_Albala"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#whichType"/>
+        <NamedIndividual IRI="#Don_PX_Pedro_Ximenez"/>
+        <NamedIndividual IRI="#Pedro_Ximenez"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#El_Nido"/>
+        <NamedIndividual IRI="#Espanya"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fromRegion"/>
+        <NamedIndividual IRI="#El_Nido"/>
+        <NamedIndividual IRI="#Jumilla"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fromWinery"/>
+        <NamedIndividual IRI="#El_Nido"/>
+        <NamedIndividual IRI="#Bodegas_El_Nido"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#whichType"/>
+        <NamedIndividual IRI="#El_Nido"/>
+        <NamedIndividual IRI="#Red"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#El_Titan_del_Bendito"/>
+        <NamedIndividual IRI="#Espanya"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fromRegion"/>
+        <NamedIndividual IRI="#El_Titan_del_Bendito"/>
+        <NamedIndividual IRI="#Toro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fromWinery"/>
+        <NamedIndividual IRI="#El_Titan_del_Bendito"/>
+        <NamedIndividual IRI="#Dominio_del_Bendito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#whichType"/>
+        <NamedIndividual IRI="#El_Titan_del_Bendito"/>
+        <NamedIndividual IRI="#Toro_Red"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Gran_Reserva"/>
+        <NamedIndividual IRI="#Espanya"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fromRegion"/>
+        <NamedIndividual IRI="#Gran_Reserva"/>
+        <NamedIndividual IRI="#Ribera_del_Duero"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fromWinery"/>
+        <NamedIndividual IRI="#Gran_Reserva"/>
+        <NamedIndividual IRI="#Dehesa_de_los_Canonigos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#whichType"/>
+        <NamedIndividual IRI="#Gran_Reserva"/>
+        <NamedIndividual IRI="#Ribera_del_Duero_Red"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Parcela_El_Picon_Tinto"/>
+        <NamedIndividual IRI="#Espanya"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fromRegion"/>
+        <NamedIndividual IRI="#Parcela_El_Picon_Tinto"/>
+        <NamedIndividual IRI="#Ribera_del_Duero"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fromWinery"/>
+        <NamedIndividual IRI="#Parcela_El_Picon_Tinto"/>
+        <NamedIndividual IRI="#Pago_de_Los_Capellanes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#whichType"/>
+        <NamedIndividual IRI="#Parcela_El_Picon_Tinto"/>
+        <NamedIndividual IRI="#Ribera_del_Duero_Red"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Tinto"/>
+        <NamedIndividual IRI="#Espanya"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fromRegion"/>
+        <NamedIndividual IRI="#Tinto"/>
+        <NamedIndividual IRI="#Toro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fromWinery"/>
+        <NamedIndividual IRI="#Tinto"/>
+        <NamedIndividual IRI="#Teso_la_Monja"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#whichType"/>
+        <NamedIndividual IRI="#Tinto"/>
+        <NamedIndividual IRI="#Toro_Red"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Touran"/>
+        <NamedIndividual IRI="#Espanya"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fromRegion"/>
+        <NamedIndividual IRI="#Touran"/>
+        <NamedIndividual IRI="#Campo_de_Borja"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fromWinery"/>
+        <NamedIndividual IRI="#Touran"/>
+        <NamedIndividual IRI="#Morca"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#whichType"/>
+        <NamedIndividual IRI="#Touran"/>
+        <NamedIndividual IRI="#Grenache"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Unico"/>
+        <NamedIndividual IRI="#Espanya"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fromRegion"/>
+        <NamedIndividual IRI="#Unico"/>
+        <NamedIndividual IRI="#Ribera_del_Duero"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fromWinery"/>
+        <NamedIndividual IRI="#Unico"/>
+        <NamedIndividual IRI="#Vega_Sicilia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#whichType"/>
+        <NamedIndividual IRI="#Unico"/>
+        <NamedIndividual IRI="#Ribera_del_Duero_Red"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Unico_Reserva_Espeical_Edicion"/>
+        <NamedIndividual IRI="#Espanya"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fromRegion"/>
+        <NamedIndividual IRI="#Unico_Reserva_Espeical_Edicion"/>
+        <NamedIndividual IRI="#Ribera_del_Duero"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fromWinery"/>
+        <NamedIndividual IRI="#Unico_Reserva_Espeical_Edicion"/>
+        <NamedIndividual IRI="#Vega_Sicilia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#whichType"/>
+        <NamedIndividual IRI="#Unico_Reserva_Espeical_Edicion"/>
+        <NamedIndividual IRI="#Ribera_del_Duero_Red"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Valbuena_5o"/>
+        <NamedIndividual IRI="#Espanya"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fromRegion"/>
+        <NamedIndividual IRI="#Valbuena_5o"/>
+        <NamedIndividual IRI="#Ribera_del_Duero"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fromWinery"/>
+        <NamedIndividual IRI="#Valbuena_5o"/>
+        <NamedIndividual IRI="#Vega_Sicilia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#whichType"/>
+        <NamedIndividual IRI="#Valbuena_5o"/>
+        <NamedIndividual IRI="#Ribera_del_Duero_Red"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Vatan_Arena_Tinta_de_Toro"/>
+        <NamedIndividual IRI="#Espanya"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fromRegion"/>
+        <NamedIndividual IRI="#Vatan_Arena_Tinta_de_Toro"/>
+        <NamedIndividual IRI="#Toro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fromWinery"/>
+        <NamedIndividual IRI="#Vatan_Arena_Tinta_de_Toro"/>
+        <NamedIndividual IRI="#Ordonez"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#whichType"/>
+        <NamedIndividual IRI="#Vatan_Arena_Tinta_de_Toro"/>
+        <NamedIndividual IRI="#Toro_Red"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#whichType"/>
+        <NamedIndividual IRI="#Vega_Sicilia"/>
+        <NamedIndividual IRI="#Ribera_del_Duero_Red"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <NamedIndividual IRI="#Turo_d&apos;en_Mota"/>
+        <NamedIndividual IRI="#Espanya"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fromRegion"/>
+        <NamedIndividual IRI="#Turo_d&apos;en_Mota"/>
+        <NamedIndividual IRI="#Cava"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fromWinery"/>
+        <NamedIndividual IRI="#Turo_d&apos;en_Mota"/>
+        <NamedIndividual IRI="#Recaredo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#whichType"/>
+        <NamedIndividual IRI="#Turo_d&apos;en_Mota"/>
+        <NamedIndividual IRI="#Cava"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAcidity"/>
+        <NamedIndividual IRI="#Don_PX_Pedro_Ximenez"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBody"/>
+        <NamedIndividual IRI="#Don_PX_Pedro_Ximenez"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Don_PX_Pedro_Ximenez"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">250</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasReviews"/>
+        <NamedIndividual IRI="#Don_PX_Pedro_Ximenez"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isRated"/>
+        <NamedIndividual IRI="#Don_PX_Pedro_Ximenez"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isfromYear"/>
+        <NamedIndividual IRI="#Don_PX_Pedro_Ximenez"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1955</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAcidity"/>
+        <NamedIndividual IRI="#El_Nido"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBody"/>
+        <NamedIndividual IRI="#El_Nido"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#El_Nido"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">134.19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasReviews"/>
+        <NamedIndividual IRI="#El_Nido"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">347</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isRated"/>
+        <NamedIndividual IRI="#El_Nido"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isfromYear"/>
+        <NamedIndividual IRI="#El_Nido"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2008</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAcidity"/>
+        <NamedIndividual IRI="#El_Titan_del_Bendito"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBody"/>
+        <NamedIndividual IRI="#El_Titan_del_Bendito"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#El_Titan_del_Bendito"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">49.95</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasReviews"/>
+        <NamedIndividual IRI="#El_Titan_del_Bendito"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">111</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isRated"/>
+        <NamedIndividual IRI="#El_Titan_del_Bendito"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isfromYear"/>
+        <NamedIndividual IRI="#El_Titan_del_Bendito"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2018</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAcidity"/>
+        <NamedIndividual IRI="#Gran_Reserva"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBody"/>
+        <NamedIndividual IRI="#Gran_Reserva"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Gran_Reserva"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">185.15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasReviews"/>
+        <NamedIndividual IRI="#Gran_Reserva"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isRated"/>
+        <NamedIndividual IRI="#Gran_Reserva"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isfromYear"/>
+        <NamedIndividual IRI="#Gran_Reserva"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAcidity"/>
+        <NamedIndividual IRI="#Parcela_El_Picon_Tinto"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBody"/>
+        <NamedIndividual IRI="#Parcela_El_Picon_Tinto"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Parcela_El_Picon_Tinto"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">134.26</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasReviews"/>
+        <NamedIndividual IRI="#Parcela_El_Picon_Tinto"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">59</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isRated"/>
+        <NamedIndividual IRI="#Parcela_El_Picon_Tinto"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isfromYear"/>
+        <NamedIndividual IRI="#Parcela_El_Picon_Tinto"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2016</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAcidity"/>
+        <NamedIndividual IRI="#Tinto"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBody"/>
+        <NamedIndividual IRI="#Tinto"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Tinto"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">995</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasReviews"/>
+        <NamedIndividual IRI="#Tinto"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">58</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isRated"/>
+        <NamedIndividual IRI="#Tinto"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isfromYear"/>
+        <NamedIndividual IRI="#Tinto"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2013</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAcidity"/>
+        <NamedIndividual IRI="#Touran"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBody"/>
+        <NamedIndividual IRI="#Touran"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Touran"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">93.95</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasReviews"/>
+        <NamedIndividual IRI="#Touran"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">41</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isRated"/>
+        <NamedIndividual IRI="#Touran"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isfromYear"/>
+        <NamedIndividual IRI="#Touran"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2018</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAcidity"/>
+        <NamedIndividual IRI="#Unico"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBody"/>
+        <NamedIndividual IRI="#Unico"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Unico"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">362.25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasReviews"/>
+        <NamedIndividual IRI="#Unico"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2765</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isRated"/>
+        <NamedIndividual IRI="#Unico"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isfromYear"/>
+        <NamedIndividual IRI="#Unico"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2006</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAcidity"/>
+        <NamedIndividual IRI="#Unico_Reserva_Espeical_Edicion"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBody"/>
+        <NamedIndividual IRI="#Unico_Reserva_Espeical_Edicion"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Unico_Reserva_Espeical_Edicion"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">431.36</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasReviews"/>
+        <NamedIndividual IRI="#Unico_Reserva_Espeical_Edicion"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">250</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isRated"/>
+        <NamedIndividual IRI="#Unico_Reserva_Espeical_Edicion"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isfromYear"/>
+        <NamedIndividual IRI="#Unico_Reserva_Espeical_Edicion"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2019</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAcidity"/>
+        <NamedIndividual IRI="#Valbuena_5o"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBody"/>
+        <NamedIndividual IRI="#Valbuena_5o"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Valbuena_5o"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">195.59</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasReviews"/>
+        <NamedIndividual IRI="#Valbuena_5o"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5116</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isRated"/>
+        <NamedIndividual IRI="#Valbuena_5o"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isfromYear"/>
+        <NamedIndividual IRI="#Valbuena_5o"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2007</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAcidity"/>
+        <NamedIndividual IRI="#Vatan_Arena_Tinta_de_Toro"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBody"/>
+        <NamedIndividual IRI="#Vatan_Arena_Tinta_de_Toro"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Vatan_Arena_Tinta_de_Toro"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">369.05</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasReviews"/>
+        <NamedIndividual IRI="#Vatan_Arena_Tinta_de_Toro"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">79</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isRated"/>
+        <NamedIndividual IRI="#Vatan_Arena_Tinta_de_Toro"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isfromYear"/>
+        <NamedIndividual IRI="#Vatan_Arena_Tinta_de_Toro"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2014</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAcidity"/>
+        <NamedIndividual IRI="#Turo_d&apos;en_Mota"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBody"/>
+        <NamedIndividual IRI="#Turo_d&apos;en_Mota"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Turo_d&apos;en_Mota"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasReviews"/>
+        <NamedIndividual IRI="#Turo_d&apos;en_Mota"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">64</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isRated"/>
+        <NamedIndividual IRI="#Turo_d&apos;en_Mota"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isfromYear"/>
+        <NamedIndividual IRI="#Turo_d&apos;en_Mota"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2007</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#fromWinery"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#whichType"/>
+    </AsymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <Class IRI="#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#fromRegion"/>
+        <Class IRI="#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#fromWinery"/>
+        <Class IRI="#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCharacteristics"/>
+        <Class IRI="#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#whichType"/>
+        <Class IRI="#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsLocatedIn"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#fromRegion"/>
+        <Class IRI="#Region"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#fromWinery"/>
+        <Class IRI="#Winery"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCharacteristics"/>
+        <Class IRI="#WineCharacteristics"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#whichType"/>
+        <Class IRI="#Type"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasPrice"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasAcidity"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasBody"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isRated"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isfromYear"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAcidity"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBody"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPrice"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasReviews"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isRated"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isfromYear"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAcidity"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasBody"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPrice"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasReviews"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isRated"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isfromYear"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Wine"/>
+                <Variable IRI="urn:swrl:var#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasAcidity"/>
+                <Variable IRI="urn:swrl:var#p"/>
+                <Variable IRI="urn:swrl:var#h"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="urn:swrl:var#h"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#low"/>
+                <Variable IRI="urn:swrl:var#p"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Wine"/>
+                <Variable IRI="urn:swrl:var#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasAcidity"/>
+                <Variable IRI="urn:swrl:var#p"/>
+                <Variable IRI="urn:swrl:var#h"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="urn:swrl:var#h"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#medium"/>
+                <Variable IRI="urn:swrl:var#p"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Wine"/>
+                <Variable IRI="urn:swrl:var#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasAcidity"/>
+                <Variable IRI="urn:swrl:var#p"/>
+                <Variable IRI="urn:swrl:var#h"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="urn:swrl:var#h"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#high"/>
+                <Variable IRI="urn:swrl:var#p"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Acidity</IRI>
+        <Literal>Grade of acidity of the wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Body</IRI>
+        <Literal>Body of the wine. It describes how heavy and rich it tastes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Cherry</IRI>
+        <Literal>https://dbpedia.org/page/Cherry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Country</IRI>
+        <Literal>country where the wine is produced</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Region</IRI>
+        <Literal>Specific Region of the Country where the wine is produced</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Rioja</IRI>
+        <Literal>https://dbpedia.org/page/Rioja_(wine)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Type</IRI>
+        <Literal>Type of wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wine</IRI>
+        <Literal>Name of the wine. Unique identifier.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Wine</IRI>
+        <Literal>https://dbpedia.org/page/Wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WineCharacteristics</IRI>
+        <Literal>Main characteristics of a wine, related to its content</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Winery</IRI>
+        <Literal>Name of the winnery where the wine is produced</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
